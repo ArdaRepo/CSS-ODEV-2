@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        #search-container {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        #search-box {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #feeling-lucky-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+            margin-left: 5px;
+        }
+
+        /* Mavi dolgu için stil eklendi */
+        #search-button {
+            background-color: #4285f4;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <img src="googlelogo.jpg" alt="Google Logo">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" id="search-box" placeholder="Search Google...">
+            <br>
+            <input type="submit" value="Google Search" id="search-button">
+            <a href="https://www.google.com/search?q=" id="feeling-lucky-button">I'm Feeling Lucky</a>
+        </form>
+    </div>
+</body>
+</html>
